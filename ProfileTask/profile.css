@@ -1,35 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+section{
+    margin-top: 20px;
+}
 article{
     width: 50%;
     border: 1px solid #000;
     margin: auto;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+}
+h2{
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.aboutt p{
+    padding: 10px 20px;
 }
 img{
     width: 150px;
     height: 150px;
     border-radius: 5%;
     margin-top: -80px;
-    margin-left: 40%;
-    /* margin-right: 50%; */
 }
 svg{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
 }
 ul{
     list-style-type: none;
+    text-align: left;
+}
+li{
+    padding: 3px 0;
 }
 .split{
+    margin-top: 50px;
     display: flex;
-
+    gap: 130px;
     flex-direction: row;
 }
-p{
-    width: 50%;
+.split h4{
+    margin-bottom: 10px;
+    text-align: left;
 }
 .banner{
-    width: 100%;
+    width:  100%;
     height: 200px;
     background-color: #D3D3D3;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+.links a:hover{
+    text-decoration: underline;
+}   
+#time{
+    margin-top: 20px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    article {
+        width: 90%;
+        padding: 20px;
+    }
+    .split {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .split h4{
+    margin-bottom: 10px;
+    text-align: center;
+}
+ul{
+     text-align: center;
+}
 }
