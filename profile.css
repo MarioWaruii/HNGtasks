@@ -152,4 +152,15 @@ li{
 ul{
      text-align: center;
 }
+#thoughts{
+    width: 50%;
+    padding: 15px 10px;
+}
+.confidence{
+    text-align: left;
+    width: 100%;
+}
+.goals {
+    text-align: left;
+} 
 }
