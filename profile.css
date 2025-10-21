@@ -156,11 +156,11 @@ ul{
     width: 50%;
     padding: 15px 10px;
 }
-.confidence{
+.confidence ul{
     text-align: left;
     width: 100%;
 }
-.goals {
+.goals ul{
     text-align: left;
-} 
+}
 }
