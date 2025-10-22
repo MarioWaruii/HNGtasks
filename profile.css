@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 body{
     background-color: #ececec;
@@ -22,12 +22,11 @@ section{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(220, 249, 239);
     font-weight: 500;
 }
 a:hover{
-    font-style: italic;
-    color: teal;
+   color: blanchedalmond;
 }
 article{
     width: 50%;
@@ -44,7 +43,6 @@ article{
 }
 
 h1, h2, h3{
-    padding: 10px;
     padding-bottom: 10px;
     font-weight: 800;
     color: #008080;
@@ -88,6 +86,7 @@ li{
     border-radius: 5px;
 
 }
+
 .links{
     display: flex;
     flex-direction: row;
@@ -102,31 +101,72 @@ li{
     text-decoration: underline;
 }
 .goals {
-    text-align: left;
+    text-align: justify;
+    width: 100%;
 }   
-.goals ul{
-    list-style: disc;
-    list-style-position: inside;
-}
 .confidence{
-    text-align: left;
+    text-align: justifty;
     width: 100%;
 }
-.confidence ul{
-    list-style: disc;
-    list-style-position: inside;
+.confidence h3{
+    text-align: justify;
 }
 .note{
     width: 100%;
     text-align: left;
 }
 .extra-thoughts{
-    margin-top: 30px;
+    width: 100%;
+    text-align: left;
+}
+button{
+    padding: 10px 30px;
+    border: none;
+    color: whitesmoke;
+    background-color: teal;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: teal;
+    color: black;
+    cursor: pointer;
+}
+.bio{
+    text-align: justify;
+}
+form{
+    width: 100%;
+}
+input, textarea{
+    width: 80%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: 2px solid teal;
+}
+.name, .email, .subject, .message{
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    align-items: first baseline;
+    justify-content: space-between;
+    align-items: center;
+}
+.submit{
+    margin-top: 30px;
+}
+#enterName, #enterEmail, #enterSubject, #enterMessage, #invalidEmail{
+    width: 100%;
+    font-size: 14px;
+    display: none;
+}
+#invalidEmail{
+    color: red;
+    margin-left: -10px;
+
 }
 #time{
     margin-top: 20px;
@@ -135,6 +175,13 @@ li{
 #thoughts{
     width: 75%;
     padding: 30px 20px;
+}
+#submitSuccess{
+    display: none;
+    color: green;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
 }
 @media (max-width: 768px) {
     article {
@@ -158,9 +205,19 @@ ul{
 }
 .confidence ul{
     text-align: left;
-    width: 100%;
 }
 .goals ul{
     text-align: left;
+}
+input, textarea{
+    width: 70%;
+}
+#enterName, #enterEmail, #enterSubject, #enterMessage, #invalidEmail{
+
+    font-size: 10px;
+
+}
+#invalidEmail{
+    margin-left: -8px;
 }
 }
